@@ -1,5 +1,5 @@
 const assert = require('assert');
-const { authorize_url, access_token } = require('./helpers');
+const { authorize_url, access_token } = require('./lib/oauth');
 
 module.exports = ({ client_id, redirect_uri, client_secret } = {}) => {
   if (!client_id || !redirect_uri) {
