@@ -7,7 +7,7 @@ module.exports = ({ client_id, redirect_uri, client_secret } = {}) => {
   }
 
   return {
-    authorize_url: params => authorize_url({ client_id, redirect_uri, ...params }),
+    authorize_url: params => authorize_url({ client_id, redirect_uri, scope: 'user', ...params }),
     access_token: params => access_token({ client_id, redirect_uri, client_secret, ...params })
   };
 };
