@@ -7,7 +7,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "axios": "^0.21.2",
-    "qs": "^6.7.0"
+    "qs": "^6.7.3"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
